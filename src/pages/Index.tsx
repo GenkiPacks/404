@@ -94,14 +94,14 @@ const Index = () => {
               ))}
             </div>
             <form onSubmit={handleSubmit} className="flex gap-2">
-              <span className="text-green-500">></span>
-              <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                className="flex-1 bg-transparent border-none text-green-500 focus:outline-none"
-                autoFocus
-              />
+                <span className="text-green-500">{`>`}</span>
+                <input
+                  type="text"
+                  value={inputValue}
+                  onChange={(e) => setInputValue(e.target.value)}
+                  className="flex-1 bg-transparent border-none text-green-500 focus:outline-none"
+                  autoFocus
+                />
             </form>
             {showHint && (
               <div className="mt-4 text-xs opacity-30 hover:opacity-100 transition-opacity">
